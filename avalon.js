@@ -5,6 +5,9 @@ $(document).ready(function() {
   $('#submitchar').click(function() {
     var character = $('input[name=characters]:checked').val();
     var name = $('#playername').val();
+    if (name == '') {
+     alert('Please enter the name of the player!'); 
+    }
     chararray[i] = name;
     i++;
     charobj[name] = character;
